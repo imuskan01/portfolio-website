@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #1e1e2f, #2b5876);
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* Glow */
+.glow {
+    font-size: 45px;
+    text-shadow: 0 0 10px #00adb5, 0 0 20px #00adb5;
+}
+
+/* Typing */
+.typing {
+    font-size: 20px;
+    border-right: 3px solid white;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: auto;
+    animation: typing 4s steps(30) forwards;
+}
+
+@keyframes typing {
+    to {
+        width: 60%;
+    }
+}
+
+/* Projects */
+#projects {
+    margin-top: 80px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 15px;
+    border-radius: 15px;
+    width: 260px;
+    transition: 0.6s;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Hidden for animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Show animation */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    background: linear-gradient(45deg, #00adb5, #00ffcc);
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Skills */
+#skills {
+    margin-top: 80px;
+}
+
+.skill {
+    width: 60%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.bar {
+    background: #444;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px;
+}
+
+/* Skill levels */
+.python { width: 90%; background: #00adb5; }
+.ml { width: 85%; background: #00ffcc; }
+.flask { width: 80%; background: #f9ca24; }
+.web { width: 75%; background: #ff7675; }
